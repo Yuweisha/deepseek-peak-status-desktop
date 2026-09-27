@@ -1,0 +1,13 @@
+# 构建产物
+bin/
+obj/
+*.user
+*.pdb
+
+# 生成图标时的中间文件（app.ico 与 TrayMask.cs 需要提交）
+render_logo.html
+logo_1024.png
+logo_square.png
+tray16.b64
+tray32.b64
+tray_preview.png

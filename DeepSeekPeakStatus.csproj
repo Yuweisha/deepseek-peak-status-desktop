@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>DeepSeekPeakStatus</RootNamespace>
+    <AssemblyName>DeepSeekPeakStatus</AssemblyName>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+    <ApplicationHighDpiMode>SystemAware</ApplicationHighDpiMode>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <Version>1.0.0</Version>
+    <AssemblyTitle>DeepSeek 峰谷时段</AssemblyTitle>
+    <Product>DeepSeek 峰谷时段</Product>
+    <Description>显示 DeepSeek API 当前峰/空闲时段与切换倒计时，自动跟随官网更新价格、时段规则与法定节假日</Description>
+    <SatelliteResourceLanguages>en</SatelliteResourceLanguages>
+    <DebugType>none</DebugType>
+    <PublishSingleFile>true</PublishSingleFile>
+    <SelfContained>true</SelfContained>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <EnableCompressionInSingleFile>true</EnableCompressionInSingleFile>
+    <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- 同时作为嵌入资源：窗口/任务栏图标要显式取自这里，WinForms 不会自动用 exe 图标 -->
+    <EmbeddedResource Include="app.ico" LogicalName="DeepSeekPeakStatus.app.ico" />
+  </ItemGroup>
+
+</Project>
